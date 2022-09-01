@@ -1,0 +1,84 @@
+.contain
+{
+    background: url(https://wallpaperset.com/w/full/6/1/4/225894.jpg);
+    width: 1400px;
+    height: 800px;
+    border-radius: 40px;
+    margin-left: 250px;
+    color: aliceblue;
+    background-size: cover;
+    text-align: center;
+    
+    
+}
+.tagline{
+    text-align: center;
+    padding-top: 20px;
+    /* margin-left: 140px; */
+    
+}
+.place
+{
+    width: 500px;
+    height: 25px;
+    /* background-image:linear-gradient(rgb(19, 16, 16),rgb(0, 0, 0)  );
+    color: #c2fbd7;
+    margin-top: 10px;
+    font-size: 20px;
+     */
+     border: 0;
+    font-family: inherit;
+    border-bottom: 2px solid;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    /* background: transparent; */
+    background:transparent;
+    transition: border-color 0.2s;
+    opacity: 100%;
+}
+.boxinput
+{
+    text-align:right;
+    color: aliceblue;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-right: 300px;
+}
+.btn{
+    /* margin-left: 750px; */
+    margin-top: 40px;
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+.col
+{
+    font-size: 25px;
+    margin-top: -400px;
+    text-align: center;
+    /* margin-left: -780px; */
+}
+.btn2
+{
+font-size: 25px;
+}
+::placeholder { 
+    color: rgb(255, 255, 255);
+    opacity: 10; 
+  }

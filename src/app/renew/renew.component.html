@@ -1,0 +1,30 @@
+<form [formGroup]="renewForm" (ngSubmit)="goToPlan()">
+    <div class="main">
+        <div class="contain">
+
+            <br>
+            <h1 class="tagline">Renew Policy</h1>
+            <br>
+            <div class="boxinput">
+                <label for="email">Enter Policy Number</label><br>
+                <input id="policy_no" class="place" type="text" placeholder="Enter Policy Number"
+                    formControlName="policy_no">
+                    <span style="color: red;" *ngIf="policy_no && policy_no.invalid && policy_no.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="user_contactNo">Enter Contact Number</label><br>
+                <input id="user_contactNo" class="place" type="number" placeholder="Phone Number" name="contactNo"
+                    formControlName="user_contactNo">
+                    <span style="color: red;" *ngIf="user_contactNo && user_contactNo.invalid && user_contactNo.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="email">Enter Email</label><br>
+                <input id="email" class="place" type="email" placeholder="Enter Email" name="username"
+                    formControlName="email">
+                    <span style="color: red;" *ngIf="email && email.invalid && email.touched">*this is required</span>
+            </div>
+            <button class="btn" type="submit">Next</button>
+        </div>
+    </div>
+
+</form>

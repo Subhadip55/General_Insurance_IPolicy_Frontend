@@ -1,0 +1,41 @@
+<form [formGroup]="paymentForm" (ngSubmit)="backtodb()">
+    <div class="main">
+        <div class="contain">
+
+            <h1 class="tagline">Payment Gateway</h1>
+            <div class="boxinput">
+                <label for="cardHolderName">Enter Full Name</label><br>
+                <input id="cardHolderName" class="place" #mand type="text" placeholder="Enter Full Name"
+                    formControlName="cardHolderName">
+                
+            </div>
+            <div class="boxinput">
+                <label for="card_no">Enter Credit/debit Card Number</label><br>
+                <input id="card_no" class="place" type="number" placeholder="Enter Credit/debit Card Number"
+                    formControlName="card_no">
+                    <span style="color: red;" *ngIf="card_no && card_no.invalid && card_no.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="cvv">Enter CVV</label><br>
+                <input id="cvv" class="place2" type="text" placeholder="Enter CVV" formControlName="cvv">
+                <span style="color: red;" *ngIf="cvv && cvv.invalid && cvv.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="expiryDateOfCard">Enter Expiry Date</label><br>
+                <input id="expiryDateOfCard" class="place2" type="text" placeholder="MM/YYYY"
+                    formControlName="expiryDateOfCard">
+                    <span style="color: red;" *ngIf="expiryDateOfCard &&expiryDateOfCard.invalid && expiryDateOfCard.touched">*this is required</span>
+            </div>
+            <button class="btn" type="button" (click)="otp()">Generate OTP</button>
+            <h2 class="num">{{otpno}}</h2>
+            <div class="boxinput">
+                <h2>Enter OTP</h2>
+                <input class="place2" type="text" placeholder="Enter OTP" [(ngModel)]="confirmOTP"  [ngModelOptions]="{standalone: true}">
+            </div>
+
+            <button class="btn" type="submit">Submit</button>
+        </div>
+    </div>
+
+
+</form>

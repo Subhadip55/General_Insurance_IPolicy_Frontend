@@ -1,0 +1,126 @@
+.cards{
+    position: inherit;
+    width:1800px;
+    height: 650px;
+   background-image: url(https://wallpapercave.com/wp/wp11144306.jpg);
+    margin-top: 50px;
+    margin-left: 50px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    border-radius: 20px;
+    transform: scale(1.0);
+    background-size: cover;
+    /* background: transparent; */
+}
+.tagline{
+    position: relative;
+font-size: xx-large;
+color: rgb(255, 255, 255);
+text-align: center;
+}
+.tagline1{
+    margin: 10em 10em;
+    padding-left: 10em;
+    }
+    
+    .tagline2{
+       float: right;
+       padding-right: 40px;
+        }
+        .desc{
+            font-size: 25px;
+            padding-right: 1000px;
+            text-shadow: black;
+            color: rgb(255, 255, 255);
+            padding-left: 35px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+.contain{
+    position: relative;
+    width: 188x;
+    padding: 20px;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+    font-family: Raleway;
+    margin: -150px;
+    padding: 13em 15em;
+    float: right;
+    
+}
+.contain .card{
+    position: inherit;
+    width:250px;
+    height:250px;
+    background: linear-gradient(rgb(1, 24, 21), lavender) ;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    border-radius: 20px;
+    transform: scale(1.0);
+    /*margin-top: -150px;
+    margin-right:700px;*/
+    
+}
+
+.contain .card:hover{
+    filter: blur(0px);
+    transform: scale(1.2);
+    opacity: 1;
+}
+.contain .card .circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:rgb(182, 193, 207);
+    clip-path: circle(130px at center 0);
+   padding-top: 20px;
+}
+.contain .card .content{
+    position: absolute;
+    bottom: 5px;
+    margin-left: 30px;
+    padding: 1px;
+    text-align: center;
+}
+.contain .card .content a{
+    display: inline-block;
+    padding: 15px 50px;
+    background: rgb(1, 24, 21);
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 15px;
+}
+img
+{
+    margin-top: -50px;
+}
+.desig{
+    padding-right: 50px;
+    margin-bottom: -18px;
+}
+.contain .card .content p{
+    font-weight: bold;
+}
+.sj
+{
+    margin-top: -50px;
+    margin-left: -120px;
+}
+.bs
+{
+    margin-left: -40px; 
+    margin-top: -120px;
+}
+.ak
+{
+    margin-left: 2px; 
+    margin-top: -100px;
+}
+.nd
+{
+    margin-left: 2px; 
+}

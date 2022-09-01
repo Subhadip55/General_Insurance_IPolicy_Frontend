@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.display-flex, .signup-content, .form-row, .form-radio, .select-icon, .select-icon i {
+    display: flex;
+}
+
+.contain {
+    width: 1600px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    /* background: linear-gradient(rgb(166, 201, 197), lavender) ; */
+    background: #b9faf7;
+    border-radius: 50px;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.tagl
+{
+/* padding-top: 0px;
+padding-left: 40%; */
+font-weight: bolder;
+color: #2b0000;
+font-size: 2.2em;
+}
+.btn2
+{
+font-size: 25px;
+/* margin-left: 680px; */
+/* margin-left: 780px;
+margin-top: 20px; */
+background-color: #59b479;
+border-radius: 100px;
+box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+color: rgb(255, 255, 255);
+cursor: pointer;
+display: inline-block;
+font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+padding: 7px 20px;
+text-align: center;
+text-decoration: none;
+transition: all 250ms;
+border: 0;
+font-size: 30px;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+.main
+{
+    color: #000000;
+   
+}
+.boxinput
+{
+    /* margin-left: -30px; */
+    font-size: 30px;
+    /* text-align: center; */
+    border-radius: 0px;
+}
+.boxinput1
+{
+    /* margin-left: 0px; */
+    font-size: 30px;
+    /* text-align: center; */
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 0.3; /* Firefox */
+  }
+  .btn
+{
+font-size: 25px;
+/* margin-left: 680px; */
+/* margin-left: 780px;
+margin-top: 20px; */
+/* background-color: #001106; */
+background-color: rgb(0, 0, 44);
+border-radius: 100px;
+box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+color: rgb(255, 255, 255);
+cursor: pointer;
+display: inline-block;
+font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+padding: 7px 20px;
+text-align: center;
+text-decoration: none;
+transition: all 250ms;
+border: 0;
+font-size: 30px;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+p
+{
+    color: red;
+    opacity: 80%;
+}

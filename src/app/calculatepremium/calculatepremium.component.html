@@ -1,0 +1,72 @@
+<div class="main">
+    <div class="contain">
+        <p class="tagl">Calculate Premium</p>
+        <br><br><br>
+        <form [formGroup]="calInsuranceForm" (ngSubmit)="calculate()">
+            <div class="main">
+                <div class="contain">
+                    <div class="boxinput">
+                        <label for="">Select Your Vehicle Type</label> &nbsp;&nbsp;
+                        <!-- <p>You selected {{selectedTeam}}</p> -->
+                        <select #teams class="btn2" id="type" (change)="onSelected(teams.value)" formControlName="type">
+                            <option default>Please Select</option>
+                            <option value="2-wheeler">2-Wheeler</option>
+                            <option value="4-wheeler">4-Wheeler</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <div class="boxinput">
+                        <label for="model">Enter Car/Bike Model</label> &nbsp;&nbsp;
+                        <select *ngIf="twoWheeler" class="btn2" id="model" aria-placeholder="Please Select the 2-wheeler model" formControlName="model">
+                            <!-- <option default>Please Select the 2-wheeler model</option> -->
+                            <option value="" disabled selected hidden>Please Select the 2-Wheeler model</option>
+                            <option>Hero(75cc)</option>
+                            <option>Hero(100cc)</option>
+                            <option>Bajaj(180cc)</option>
+                            <option>Royal Enfield(350cc)</option>
+                            <option>KTM(390cc)</option>
+                            <option>Kawasaki(600cc) </option>
+                            <option>Yamaha(400cc)</option>
+                            <option>Ducati(1000cc)</option>
+                            <option>Ola_Electric</option>
+                        </select>
+        
+                        <select *ngIf="fourWheeler" class="btn2"id="model" aria-placeholder="Please Select the 4-wheeler model" formControlName="model">
+                            <!-- <option default>Please Select the 4-wheeler model</option> -->
+                            <option value="" disabled selected hidden>Please Select the 4-Wheeler model</option>
+                            <option>Maruti Suzuki(1000cc)</option>
+                            <option>Tata(1100cc)</option>
+                            <option>Mahindra(1500cc)</option>
+                            <option>Kia(1800cc)</option>
+                            <option>Toyota(2000cc)</option>
+                            <option>Audi(2500cc)</option>
+                            <option>Nissan(800cc)</option>
+                            <option>Renault(900cc)</option>
+                            <option>BMW(3000cc)</option>
+                            <option>Rolls Royce(3500cc)</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <div class="boxinput">
+                        <label for="age">Enter Age</label>&nbsp;&nbsp;
+                        <input id="age" class="btn2" type="number" placeholder="Enter Vehicle age" formControlName="age">
+                    </div>
+        
+                    <!-- <div class="col">
+                        <p>Select Your Vehicle Type</p>
+                        <p>You selected {{selectedTeam}}</p>
+                        <select #teams class="btn2" id="type" (change)="onSelected(teams.value)" formControlName="type">
+                            <option default>Please Select</option>
+                            <option value="2-wheeler">2-Wheeler</option>
+                            <option value="4-wheeler">4-Wheeler</option>
+                        </select>
+                    </div> -->
+                    <br><br><br><button class="btn" type="submit">Calculate</button>
+                    <h1 class="boxinput" *ngIf="visible">Your Premium will be Rs. {{estimatevalue}}</h1>
+                </div>
+                <p *ngIf="visible">*This is a rough estimation of premium for 1 year, it may vary according to your selected plan </p>
+            </div>
+        </form>
+      
+    </div>
+</div>

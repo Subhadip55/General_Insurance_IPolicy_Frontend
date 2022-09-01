@@ -1,0 +1,38 @@
+<form [formGroup]="planForm" (ngSubmit)="payment()">
+    <div>
+        <div class="contain">
+            <h1 class="tagline">Plan Details</h1>
+            <br><br>
+            <div class="col">
+                <p>Select Your Plan Type</p>
+                <!-- <p>You selected {{selectedTeam1}}</p> -->
+                <select id="plan" #teams class="btn2" (change)="onSelected1(teams.value)" formControlName="plan">
+                    <option value="" disabled selected hidden>Please Select Plan</option>
+                    <option>Comprehensive</option>
+                    <option>Third Party Liability</option>
+                </select>
+            </div>
+            <div class="col">
+                <p>Select Your Time Span</p>
+                <!-- <p>You selected {{selectedTeam2}}</p> -->
+                <select id="year" #teams2 class="btn2" (change)="onSelected2(teams2.value)" formControlName="year">
+                    <option value="" disabled selected hidden>Please Select Year</option>
+                    <option value="1">1 Year</option>
+                    <option value="2">2 Year</option>
+                    <option value="3">3 Year</option>
+                </select>
+            </div>
+            <button class="btn" type="button" (click)="calculatePremium()">Calculate</button>
+            <h2 *ngIf="visible">Estimated Premium is Rs {{calpremium}}</h2>
+           
+            <br>
+            <!-- <button class="btn">Calculate</button> -->
+            <button *ngIf="visible" class="btn" type="submit">Proceed To Payment</button>
+
+
+
+
+
+        </div>
+    </div>
+</form>

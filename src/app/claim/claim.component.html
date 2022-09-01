@@ -1,0 +1,66 @@
+<form [formGroup]="claimForm" (ngSubmit)="backtodb()">
+    <div class="main">
+        <div class="contain">
+            
+            <h1 class="tagline">Claim</h1>
+            <div class="boxinput">
+                <label for="email">Enter Policy Number</label><br>
+            <input id="policy_no" class="place" type="text" placeholder="Enter Policy Number" formControlName="policy_no">
+            <span style="color: red;" *ngIf="policy_no && policy_no.invalid && policy_no.touched">*this is required</span>
+        </div>
+        <div class="boxinput">
+            <label for="user_contactNo">Enter Mobile Number</label><br>
+            <input id="user_contactNo" class="place" type="number" placeholder="Enter Mobile Number" name="user_contactNo"
+            formControlName="user_contactNo">
+            <span style="color: red;" *ngIf="user_contactNo && user_contactNo.invalid && user_contactNo.touched">*this is required</span>
+        </div>
+        <div class="col2">
+            <p>Select Your Claiming Reason</p>
+            <!-- <p>You selected {{selectedTeam2}}/-</p> -->
+                <select id="accident_type" #teams3 class="btn2" (change)="onSelected2(teams3.value)" formControlName="accident_type" required>
+                    <option default >Please Select</option>
+                    <option>Natural Disaster</option>
+                    <option>Man-made Disaster</option>
+                    <option>Road Accident</option>
+                    <option>Theft</option>
+               
+                </select>
+            </div>
+        
+    <button class="btn" type="submit">Confirm</button>
+        </div>
+        </div>
+    
+    <!-- </form><form [formGroup]="claimForm" (ngSubmit)="backtodb()">
+    
+    <div class="main">
+        <div class="contain">
+            
+            <h1 class="tagline">Claim</h1>
+            <div class="boxinput">
+                <label for="email">Enter Policy Number</label><br>
+            <input id="policy_no" class="place" type="text" placeholder="Enter Policy Number" formControlName="policy_no">
+        </div>
+        <div class="boxinput">
+            <label for="email">Enter Email</label><br>
+            <input id="email" class="place" type="email" placeholder="Enter Email" name="username"
+            formControlName="email">
+        </div>
+        <div class="col2">
+            <p>Select Your Claiming Reason</p>
+            <p>You selected {{selectedTeam2}}</p>
+                <select id="accident_type" #teams3 class="btn2" (change)="onSelected2(teams3.value)" formControlName="accident_type">
+                    <option default >Please Select</option>
+                    <option>Natural Disaster</option>
+                    <option>Man-made Disaster</option>
+                    <option>Road Accident</option>
+                    <option>Theft</option>
+               
+                </select>
+            </div>
+        
+    <button class="btn" type="submit">Next</button>
+        </div>
+        </div>
+    
+    </form> -->

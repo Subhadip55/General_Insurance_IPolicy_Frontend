@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Sniglet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+   
+}
+/*Cards*/
+.contain{
+    position: relative;
+    width: 1800x;
+    padding: 20px;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+    font-family: Raleway;
+    margin: 0 auto;
+    padding: 10em 0em;
+    float: right;
+   
+    
+}
+.contain .card{
+    position: inherit;
+    width:315px;
+    height:440px;
+    background: linear-gradient(rgb(226, 235, 234), lavender) ;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    border-radius: 20px;
+    transform: scale(1.0);
+}
+
+.contain .card:hover{
+    filter: blur(0px);
+    transform: scale(1.2);
+    opacity: 1;
+}
+.contain .card .circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:rgb(1, 9, 48);
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+.contain .card .circle h2{
+    color:rgb(255, 255, 255);
+    font-size: 4.5em;
+    padding: 30px 0;
+}
+.contain .card .content{
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.contain .card .content p{
+    color:black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.contain .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(1, 2, 37);
+    color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+}
+h1{
+    width: 800px;
+    font-size: 20px;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    line-height:40px
+ }
+ .contain .card .circle h3{
+    color:rgb(255, 255, 255);
+    font-size: 3.5em;
+    padding: 30px 0;
+}
+
+.contain .cards{
+    position: inherit;
+    width:800px;
+    height: 500px;
+    background: linear-gradient(rgb(226, 235, 234), lavender) ;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    border-radius: 20px;
+    transform: scale(1.0);
+    background-image: url(https://thumbs.dreamstime.com/b/car-banner-red-against-gradient-background-partially-hidden-image-passenger-227601153.jpg);
+    margin-right: -10px;
+    
+}
+.desc{
+    font-size: larger;
+    padding-right: 230px;
+    text-shadow: black;
+    color: #fff;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.tagline{
+text-align: center;
+font-size: xx-large;
+color: #fff;
+}
+.content a{
+    cursor: pointer;
+}

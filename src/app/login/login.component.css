@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.display-flex, .signup-content, .form-row, .form-radio, .select-icon, .select-icon i {
+    display: flex;
+}
+
+.contain {
+    width: 1600px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    background-image: url(https://r4.wallpaperflare.com/wallpaper/30/191/665/peugeot-onyx-concept-cars-and-bikes-wallpaper-2910d8cd715a9d7ba647285f3051f60d.jpg);
+    border-radius: 50px;
+    background-size: cover;
+}
+
+  
+.form-submit {
+    text-align: center;
+    margin-top: 20px; 
+    margin-left: 130px;
+}
+  
+.submit {
+    width: 140px;
+    height: 40px;
+    display: inline-block;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 13px;
+    padding: 10px;
+    border: none;
+    cursor: pointer; 
+}
+.submit a {
+    color:lavender;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+#submit {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); 
+}
+
+#register {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); 
+}
+#register1 {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); 
+}
+@media screen and (max-width: 992px) {
+    .container {
+        width: calc(100% - 40px);
+        max-width: 100%; 
+    }
+
+}
+.tagline{
+    text-align: center;
+    margin-left: 140px;
+    color:aliceblue;
+    
+}
+.place
+{
+    width: 500px;
+    height: 25px;
+    /* background-image:linear-gradient(rgb(19, 16, 16),rgb(0, 0, 0)  );
+    color: #c2fbd7;
+    margin-top: 10px;
+    font-size: 20px; */
+    border: 0;
+    font-family: inherit;
+    border-bottom: 2px solid;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+     background: transparent; 
+    /* background:cornsilk; */
+    transition: border-color 0.2s;
+    margin-top: 10px;
+}
+.boxinput
+{
+    text-align: center;
+    margin-left: 150px;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.btn{
+margin-left: 780px;
+margin-top: 20px;
+background-color: #c2fbd7;
+border-radius: 100px;
+box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+color: green;
+cursor: pointer;
+display: inline-block;
+font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+padding: 7px 20px;
+text-align: center;
+text-decoration: none;
+transition: all 250ms;
+border: 0;
+font-size: 16px;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+
+.btn:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.btn2
+{
+background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #ce2121;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+
+
+
+}
+.btn2:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  .text
+  {
+font-size: 25px;
+  }
+

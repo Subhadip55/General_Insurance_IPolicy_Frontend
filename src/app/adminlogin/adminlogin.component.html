@@ -1,0 +1,26 @@
+
+ <div class="main">
+    <div class="contain">
+        
+        <form [formGroup]="adminForm"  (ngSubmit)="login()">
+        <h1 class="tagline">Admin LogIn</h1><br>
+        <div class="boxinput">
+            <label for="admin_username" ><h2>Enter Email</h2></label>
+            <input id="admin_username" class="place" type="text" placeholder="Enter Email"  formControlName="admin_username">
+            <span style="color: red;" *ngIf="admin_username && admin_username.invalid && admin_username.touched">*this is required</span>
+        </div>
+        <div class="boxinput">
+            <label for="admin_password"><h2>Enter Password </h2></label>
+            <input id="admin_password" class="place" type="password" placeholder="Enter Password"  formControlName="admin_password">
+            <span style="color: red;" *ngIf="admin_password && admin_password.invalid && admin_password.touched">*this is required</span>
+        </div>
+    
+        <button class="btn" type="submit">Login</button>
+        </form>
+
+    </div>
+</div>
+
+    
+
+              

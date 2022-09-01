@@ -1,0 +1,76 @@
+<form [formGroup]="buyInsuranceForm" (ngSubmit)="plan()">
+    <div class="main">
+        <div class="contain">
+            <h1 class="tagline">Vehicle Details</h1>
+            <br><br>
+            <div class="boxinput">
+                <label for="manufacturer">Enter Manufacturer Details</label>&nbsp;&nbsp;
+                <input id="manufacturer" class="place" type="text" placeholder="Enter manufacturer details" formControlName="manufacturer">
+                <span style="color: rgb(238, 119, 119);" *ngIf="manufacturer && manufacturer.invalid && manufacturer.touched">*this is required</span>
+            </div>
+            
+            <div class="boxinput">
+                <label for="model">Enter Car/Bike Model</label>&nbsp;&nbsp;
+                <select *ngIf="twoWheeler" class="btn2" id="model" aria-placeholder="Please Select the 2-wheeler model" formControlName="model">
+                    <!-- <option default>Please Select the 2-wheeler model</option> -->
+                    <option value="" disabled selected hidden>Please Select the 2-Wheeler model</option>
+                    <option>Hero(75cc)</option>
+                    <option>Hero(100cc)</option>
+                    <option>Bajaj(180cc)</option>
+                    <option>Royal Enfield(350cc)</option>
+                    <option>KTM(390cc)</option>
+                    <option>Kawasaki(600cc) </option>
+                    <option>Yamaha(400cc)</option>
+                    <option>Ducati(1000cc)</option>
+                    <option>Ola_Electric</option>
+                </select>
+
+                <select *ngIf="fourWheeler" class="btn2"id="model" aria-placeholder="Please Select the 4-wheeler model" formControlName="model">
+                    <!-- <option default>Please Select the 4-wheeler model</option> -->
+                    <option value="" disabled selected hidden>Please Select the 4-Wheeler model</option>
+                    <option>Maruti Suzuki(1000cc)</option>
+                    <option>Tata(1100cc)</option>
+                    <option>Mahindra(1500cc)</option>
+                    <option>Kia(1800cc)</option>
+                    <option>Toyota(2000cc)</option>
+                    <option>Audi(2500cc)</option>
+                    <option>Nissan(800cc)</option>
+                    <option>Renault(900cc)</option>
+                    <option>BMW(3000cc)</option>
+                    <option>Rolls Royce(3500cc)</option>
+                </select>
+            </div>
+            <div class="boxinput">
+                <label for="purchase_date">Enter Vehicle Purchase Date</label><br>
+                <input id="purchase_date" class="place" type="date" placeholder="Enter Vehicle Purchase Date" formControlName="purchase_date">
+                <span style="color: rgb(238, 119, 119);" *ngIf="purchase_date && purchase_date.invalid && purchase_date.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="registration_no">Enter Registration Number</label><br>
+                <input id="registration_no" class="place" type="text" placeholder="Enter Registration Number" formControlName="registration_no">
+                <span style="color: rgb(238, 119, 119);" *ngIf="registration_no && registration_no.invalid && registration_no.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="engine_no">Enter Engine Number</label><br>
+                <input id="engine_no" class="place" type="text" placeholder="Enter Engine Number" formControlName="engine_no">
+                <span style="color: rgb(238, 119, 119);" *ngIf="engine_no && engine_no.invalid && engine_no.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="chasis_no">Enter Chassis Number</label><br>
+                <input id="chasis_no" class="place" type="text" placeholder="Enter Chassis Number" formControlName="chasis_no">
+                <span style="color: rgb(238, 119, 119);" *ngIf="chasis_no && chasis_no.invalid && chasis_no.touched">*this is required</span>
+            </div>
+            <div class="col">
+                <p>Select Your Vehicle Type</p>
+                <!-- <p>You selected {{selectedTeam}}</p> -->
+                <select #teams class="btn2" id="type" (change)="onSelected(teams.value)" formControlName="type">
+
+                    <option default>Please Select</option>
+                    <option value="2-wheeler">2-Wheeler</option>
+                    <option value="4-wheeler">4-Wheeler</option>
+                </select>
+            </div>
+            <br><br><br><button class="btn" type="submit">Next</button>
+        </div>
+    </div>
+</form>

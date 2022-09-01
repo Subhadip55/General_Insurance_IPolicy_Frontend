@@ -1,0 +1,69 @@
+<form [formGroup]="registrationForm" (ngSubmit)="login()">
+    <div class="main">
+        <div class="contain">
+
+            <h1 class="tagline">Registration Details</h1>
+            <div class="boxinput">
+                <label for="user_name">Enter Name</label>&nbsp;&nbsp;
+                <input id="user_name" class="place" #mand type="text" placeholder="Enter Name"
+                    formControlName="user_name" required>
+                    <span style="color: rgb(238, 119, 119);" *ngIf="user_name && user_name.invalid && user_name.touched">*this is required</span>
+            </div>
+           
+            <div class="boxinput">
+                <label for="email">Enter Email</label>&nbsp;&nbsp;
+                <input id="email" class="place" type="email" placeholder="Enter Email" formControlName="email" required>
+                <span style="color: rgb(238, 119, 119);" *ngIf="email && email.invalid && email.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="user_dob">Enter Date of birth</label>&nbsp;&nbsp;
+                <input id="user_dob" class="place" type="date" placeholder="Enter Date of birth"
+                    formControlName="user_dob" required>
+                    <span style="color: rgb(238, 119, 119);" *ngIf="user_dob && user_dob.invalid && user_dob.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="user_dl">Enter Driving License Number</label>&nbsp;&nbsp;
+                <input id="user_dl" class="place" type="text" placeholder="Enter Driving License Number"
+                    formControlName="user_dl" required>
+                    <span style="color: rgb(238, 119, 119);" *ngIf="user_dl && user_dl.invalid && user_dl.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="user_contactNo">Enter Contact Number</label>&nbsp;&nbsp;
+                <input id="user_contactNo" class="place" type="number" placeholder="Enter Contact Number"
+                    formControlName="user_contactNo" required>
+                    <span style="color: rgb(238, 119, 119);" *ngIf="user_contactNo && user_contactNo.invalid && user_contactNo.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="user_city">Enter City</label>&nbsp;&nbsp;
+                <input id="user_city" class="place" type="text" placeholder="Enter City" formControlName="user_city">
+                <span style="color: rgb(238, 119, 119);" *ngIf="user_city && user_city.invalid && user_city.touched">*this is required</span>
+                    
+            </div>
+            <div class="boxinput">
+                <label for="user_state">Enter State</label>&nbsp;&nbsp;
+                <input id="user_state" class="place" type="text" placeholder="Enter State" formControlName="user_state"
+                    required>
+                    <span style="color: rgb(238, 119, 119);" *ngIf="user_state && user_state.invalid && user_state.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="user_zipCode">Enter Zip Code</label>&nbsp;&nbsp;
+                <input id="user_zipCode" class="place" type="number" placeholder="Enter Zip Code"
+                    formControlName="user_zipCode" required>
+                    <span style="color: rgb(238, 119, 119);" *ngIf="user_zipCode && user_zipCode.invalid && user_zipCode.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="user_password">Enter Password</label>&nbsp;&nbsp;
+                <input id="user_password" class="place" type="password" placeholder="Enter Password"
+                    formControlName="user_password" required>
+                    <span style="color: rgb(238, 119, 119);" *ngIf="user_password && user_password.invalid && user_password.touched">*this is required</span>
+            </div>
+            <div class="boxinput">
+                <label for="user_confirm_password">Confirm Password</label>&nbsp;&nbsp;
+                <input id="user_confirm_password" class="place" type="password" placeholder="Enter Password again"
+                    [(ngModel)]="confirmPassword" [ngModelOptions]="{standalone: true}" required>
+            </div>
+
+            <button class="btn" type="submit">Register</button>
+        </div>
+    </div>
+</form>
