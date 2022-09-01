@@ -20,6 +20,8 @@ insuranceForm: FormGroup;
 paymentAmount: number;
 cardHolderName: string;
 val: any;
+email: string;
+valEmail: any;
 valcardHolderName: any;
 choice: any;
 renewForm: FormGroup;
@@ -79,8 +81,8 @@ planYear: FormGroup;
 
       });
 
-      this.valcardHolderName = sessionStorage.getItem("cardHolderName");
-      this.cardHolderName = this.valcardHolderName.toString();
+      this.valEmail = sessionStorage.getItem("email");
+      this.email = this.valEmail.toString();
       //console.log(this.cardHolderName);
       // this.buy1 = sessionStorage.getItem("buyForm1");
       // this.plan2 = sessionStorage.getItem("buyForm2");
@@ -99,7 +101,7 @@ planYear: FormGroup;
     }
     else {
       this.renewForm=this.fb.group({
-        cardHolderName: ['', Validators.required], 
+        email: ['', Validators.required], 
         user_contactNo:['', Validators.required],                                       
         policy_no: ['', Validators.required]
       });
@@ -119,7 +121,7 @@ backtodb(){
   if(this.choice == "buy") {
     if(this.otpno == this.confirmOTP) {
       //console.log(this.insuranceForm.value);
-      this.userServ.buyInsurance(this.cardHolderName, this.insuranceForm.value).subscribe(data=>{
+      this.userServ.buyInsurance(this.email, this.insuranceForm.value).subscribe(data=>{
         if(data==null) {
           alert("Some error occurred")
         }
@@ -138,7 +140,7 @@ backtodb(){
     if(this.otpno == this.confirmOTP) {
       //console.log(this.insuranceForm.value);
       this.userServ.renewInsurance(this.renewForm.value.policy_no, 
-                                    this.renewForm.value.cardHolderName, 
+                                    this.renewForm.value.email, 
                                     this.renewForm.value.user_contactNo, 
                                     this.planYear.value.plan,
                                     this.planYear.value.year,
